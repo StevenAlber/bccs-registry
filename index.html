@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCCS Global Registry — Territorial Bio-Asset Clearing Infrastructure</title>
+<meta name="description" content="The world's first sovereign-grade, jurisdictionally neutral registry for territorial bio-asset clearing states. Operated by KRYONIS Sovereign Systems.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: #0A0C10; color: #E8E9EC; line-height: 1.7; overflow-x: hidden; }
+
+/* ── HERO ── */
+.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 80px 60px; background: linear-gradient(170deg, #0A0C10 0%, #0F1A16 40%, #142820 100%); position: relative; overflow: hidden; }
+.hero::before { content: ‘’; position: absolute; top: 20%; right: 10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(27,77,62,0.15) 0%, transparent 70%); border-radius: 50%; }
+.hero-badge { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #2A7A5F; margin-bottom: 40px; position: relative; z-index: 2; }
+.hero h1 { font-family: ‘Cormorant Garamond’, serif; font-size: clamp(40px, 5.5vw, 72px); font-weight: 600; color: #F5F0E8; line-height: 1.1; max-width: 800px; position: relative; z-index: 2; }
+.hero h1 em { font-style: italic; color: #2A7A5F; }
+.hero-sub { font-size: 18px; font-weight: 300; color: rgba(245,240,232,0.5); max-width: 580px; margin-top: 30px; position: relative; z-index: 2; }
+.hero-meta { margin-top: 60px; display: flex; gap: 40px; flex-wrap: wrap; position: relative; z-index: 2; }
+.hero-meta-item { }
+.hero-meta-item .hm-val { font-family: ‘JetBrains Mono’, monospace; font-size: 13px; font-weight: 500; color: #2A7A5F; letter-spacing: 1px; }
+.hero-meta-item .hm-key { font-size: 12px; color: rgba(245,240,232,0.3); margin-top: 4px; }
+
+/* ── SECTIONS ── */
+.section-label { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #2A7A5F; margin-bottom: 30px; }
+section { padding: 120px 60px; }
+section h2 { font-family: ‘Cormorant Garamond’, serif; font-size: clamp(28px, 3.5vw, 44px); font-weight: 600; color: #F5F0E8; line-height: 1.2; margin-bottom: 20px; max-width: 700px; }
+section .lead { font-size: 17px; font-weight: 300; color: rgba(245,240,232,0.5); max-width: 620px; margin-bottom: 60px; }
+
+/* ── WHAT IT IS ── */
+.what { background: #0A0C10; border-top: 1px solid rgba(255,255,255,0.04); }
+.what-inner { max-width: 900px; margin: 0 auto; }
+.what p { font-size: 17px; color: rgba(245,240,232,0.6); font-weight: 300; margin-bottom: 24px; max-width: 680px; }
+.what strong { color: #E8E9EC; font-weight: 600; }
+.not-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 50px; }
+.not-item { padding: 24px 28px; border: 1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.02); }
+.not-item .not-label { font-family: ‘JetBrains Mono’, monospace; font-size: 11px; font-weight: 500; color: #8B4A4A; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+.not-item p { font-size: 14px; color: rgba(245,240,232,0.45); margin-bottom: 0; line-height: 1.6; }
+
+/* ── DATA ── */
+.data { background: #0F1A16; }
+.data-inner { max-width: 1000px; margin: 0 auto; }
+.tbar-box { border: 1px solid rgba(42,122,95,0.2); padding: 40px; background: rgba(42,122,95,0.04); margin-bottom: 40px; }
+.tbar-box h3 { font-family: ‘JetBrains Mono’, monospace; font-size: 14px; font-weight: 500; color: #2A7A5F; letter-spacing: 1px; margin-bottom: 20px; }
+.tbar-field { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.tbar-field:last-child { border-bottom: none; }
+.tbar-field .tf-name { font-family: ‘JetBrains Mono’, monospace; font-size: 13px; color: #2A7A5F; }
+.tbar-field .tf-desc { font-size: 13px; color: rgba(245,240,232,0.4); text-align: right; max-width: 60%; }
+
+/* ── STATES ── */
+.states { background: #0A0C10; border-top: 1px solid rgba(255,255,255,0.04); }
+.states-inner { max-width: 1000px; margin: 0 auto; }
+.state-flow { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 40px; }
+.state-card { flex: 1; min-width: 140px; padding: 28px 20px; border: 1px solid rgba(42,122,95,0.15); background: rgba(42,122,95,0.03); text-align: center; position: relative; }
+.state-card.reversed { border-color: rgba(139,74,74,0.3); background: rgba(139,74,74,0.04); }
+.state-num { font-family: ‘JetBrains Mono’, monospace; font-size: 28px; font-weight: 500; color: #2A7A5F; }
+.state-card.reversed .state-num { color: #8B4A4A; }
+.state-name { font-size: 13px; font-weight: 600; color: #E8E9EC; margin-top: 8px; letter-spacing: 0.5px; }
+.state-desc { font-size: 11px; color: rgba(245,240,232,0.35); margin-top: 6px; line-height: 1.5; }
+.state-arrow { display: flex; align-items: center; color: rgba(42,122,95,0.3); font-size: 20px; }
+.state-note { margin-top: 30px; padding: 20px; border-left: 2px solid #8B6914; background: rgba(139,105,20,0.06); }
+.state-note p { font-family: ‘Cormorant Garamond’, serif; font-size: 17px; font-style: italic; color: #8B6914; margin: 0; }
+
+/* ── GOVERNANCE ── */
+.governance { background: #0F1A16; }
+.gov-inner { max-width: 900px; margin: 0 auto; }
+.gov-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+.gov-card { padding: 30px; border: 1px solid rgba(255,255,255,0.06); }
+.gov-card h3 { font-family: ‘Cormorant Garamond’, serif; font-size: 20px; font-weight: 600; color: #F5F0E8; margin-bottom: 12px; }
+.gov-card p { font-size: 14px; color: rgba(245,240,232,0.45); line-height: 1.7; }
+
+/* ── DEPLOYMENT ── */
+.deploy { background: #0A0C10; border-top: 1px solid rgba(255,255,255,0.04); }
+.deploy-inner { max-width: 900px; margin: 0 auto; }
+.phase-list { margin-top: 40px; }
+.phase { padding: 30px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.phase:last-child { border-bottom: none; }
+.phase-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 10px; }
+.phase-num { font-family: ‘JetBrains Mono’, monospace; font-size: 12px; font-weight: 500; color: #2A7A5F; letter-spacing: 1px; }
+.phase-title { font-family: ‘Cormorant Garamond’, serif; font-size: 22px; font-weight: 600; color: #F5F0E8; }
+.phase-time { font-size: 12px; color: rgba(245,240,232,0.3); margin-left: auto; }
+.phase p { font-size: 15px; color: rgba(245,240,232,0.45); font-weight: 300; line-height: 1.7; }
+
+/* ── CTA ── */
+.cta { padding: 120px 60px; background: linear-gradient(170deg, #142820 0%, #1B4D3E 100%); text-align: center; }
+.cta h2 { font-family: ‘Cormorant Garamond’, serif; font-size: clamp(28px, 4vw, 48px); font-weight: 600; color: #F5F0E8; margin-bottom: 20px; max-width: none; }
+.cta p { font-size: 17px; color: rgba(245,240,232,0.5); margin-bottom: 40px; font-weight: 300; }
+.btn-primary { display: inline-block; padding: 16px 36px; background: #2A7A5F; color: #F5F0E8; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; transition: all 0.3s ease; cursor: pointer; }
+.btn-primary:hover { background: #1B4D3E; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(42,122,95,0.3); }
+.cta-email { margin-top: 30px; font-size: 14px; color: rgba(245,240,232,0.3); }
+.cta-email a { color: #2A7A5F; text-decoration: none; cursor: pointer; }
+
+/* ── FOOTER ── */
+footer { padding: 40px 60px; background: #0A0C10; border-top: 1px solid rgba(255,255,255,0.04); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+.footer-left { font-size: 12px; color: rgba(245,240,232,0.25); }
+.footer-left strong { color: rgba(245,240,232,0.5); font-weight: 600; }
+.footer-right { font-size: 11px; color: rgba(245,240,232,0.15); letter-spacing: 0.5px; }
+
+@media (max-width: 768px) {
+.hero, section, .cta { padding: 80px 24px; }
+footer { padding: 30px 24px; }
+.not-grid { grid-template-columns: 1fr; }
+.gov-grid { grid-template-columns: 1fr; }
+.state-flow { flex-direction: column; }
+.state-arrow { transform: rotate(90deg); justify-content: center; }
+.tbar-field { flex-direction: column; gap: 4px; }
+.tbar-field .tf-desc { text-align: left; max-width: 100%; }
+.hero-meta { gap: 24px; }
+}
+</style>
+
+</head>
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-badge">BCCS Global Registry &middot; Operated by KRYONIS Sovereign Systems</div>
+  <h1>The institutional address for <em>territorial bio-capital</em></h1>
+  <p class="hero-sub">The world&rsquo;s first sovereign-grade, jurisdictionally neutral registry for territorial bio-asset clearing states. Not a platform. Not a marketplace. Infrastructure.</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item"><div class="hm-val">7 STATES</div><div class="hm-key">Clearing-state progression</div></div>
+    <div class="hero-meta-item"><div class="hm-val">BAIN ID</div><div class="hm-key">Global identification standard</div></div>
+    <div class="hero-meta-item"><div class="hm-val">HK &middot; UAE &middot; SG</div><div class="hm-key">Tri-jurisdiction hosting</div></div>
+    <div class="hero-meta-item"><div class="hm-val">MPIV</div><div class="hm-key">Multi-perspective verification</div></div>
+  </div>
+</section>
+
+<!-- WHAT IT IS -->
+
+<section class="what">
+  <div class="what-inner">
+    <div class="section-label">What This Is</div>
+    <h2>SWIFT for bio-assets.</h2>
+    <p>A <strong>trillion dollars in stranded biological assets</strong> exist on sovereign territories worldwide &mdash; peatland carbon, boreal forest biomass, freshwater systems, biodiversity. Measured but invisible. Verified but unrecorded. Valuable but unbanked.</p>
+    <p>The BCCS Global Registry is the <strong>institutional record system</strong> that makes territorial bio-assets visible, queryable, and trustworthy for institutional capital. It stores the clearing-state progression of every registered territorial bio-asset &mdash; from initial observation through measurement, verification, and final clearing.</p>
+    <p>It does for bio-capital what SWIFT does for financial messages, what DTCC does for securities settlement, and what the Torrens system does for land title. <strong>The invisible layer that makes an asset class function.</strong></p>
+    <div class="not-grid">
+      <div class="not-item"><div class="not-label">Not a carbon registry</div><p>Does not track credits, offsets, or emission reductions. Tracks clearing states of territorial bio-assets &mdash; a fundamentally different data object.</p></div>
+      <div class="not-item"><div class="not-label">Not a token registry</div><p>Does not issue, store, or track digital tokens. Tokenisation, if it occurs, happens after clearing-state 5 and outside the registry.</p></div>
+      <div class="not-item"><div class="not-label">Not a public database</div><p>Institutional investors, auditors, and sovereign entities have access. Not secrecy &mdash; institutional appropriateness.</p></div>
+      <div class="not-item"><div class="not-label">Not a blockchain</div><p>Merkle-tree tamper evidence, not distributed consensus. Institutional capital requires identifiable counterparties, not anonymous nodes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DATA ARCHITECTURE -->
+
+<section class="data">
+  <div class="data-inner">
+    <div class="section-label">Data Architecture</div>
+    <h2>One object. One standard. Global.</h2>
+    <p class="lead">The registry stores exactly one type of primary object: the Territorial Bio-Asset Record (TBAR). Every data element is a property of, or relation to, a TBAR.</p>
+    <div class="tbar-box">
+      <h3>TBAR &mdash; TERRITORIAL BIO-ASSET RECORD</h3>
+      <div class="tbar-field"><span class="tf-name">bain_id</span><span class="tf-desc">Globally unique Bio-Asset Identification Number</span></div>
+      <div class="tbar-field"><span class="tf-name">coordinates</span><span class="tf-desc">GeoJSON polygon boundary, 10m precision</span></div>
+      <div class="tbar-field"><span class="tf-name">clearing_state</span><span class="tf-desc">Current BCCS state (1&ndash;5, R)</span></div>
+      <div class="tbar-field"><span class="tf-name">state_history</span><span class="tf-desc">Timestamped log of all transitions</span></div>
+      <div class="tbar-field"><span class="tf-name">asset_layers</span><span class="tf-desc">Carbon, biomass, freshwater, biodiversity</span></div>
+      <div class="tbar-field"><span class="tf-name">verification_records</span><span class="tf-desc">Verifier IDs, methodology, convergence score</span></div>
+      <div class="tbar-field"><span class="tf-name">legal_vehicle</span><span class="tf-desc">SPC or entity encapsulating the territory</span></div>
+      <div class="tbar-field"><span class="tf-name">exclusions</span><span class="tf-desc">Heritage, speculative minerals, political goodwill</span></div>
+      <div class="tbar-field"><span class="tf-name">capital_eligibility</span><span class="tf-desc">Boolean: capital-entry readiness achieved</span></div>
+    </div>
+    <div class="tbar-box">
+      <h3>BAIN ID FORMAT</h3>
+      <div class="tbar-field"><span class="tf-name">RU-KAR-PEG-001-7</span><span class="tf-desc">Country &ndash; Region &ndash; Territory &ndash; Sequence &ndash; Check</span></div>
+      <div class="tbar-field"><span class="tf-name">KZ-AKM-STP-003-2</span><span class="tf-desc">Kazakhstan &ndash; Akmola &ndash; Steppe &ndash; 003 &ndash; Check</span></div>
+      <div class="tbar-field"><span class="tf-name">ID-KAL-PTL-012-5</span><span class="tf-desc">Indonesia &ndash; Kalimantan &ndash; Peatland &ndash; 012 &ndash; Check</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLEARING STATES -->
+
+<section class="states">
+  <div class="states-inner">
+    <div class="section-label">Clearing-State Pathway</div>
+    <h2>Seven states. Irreversible ratchet. No shortcuts.</h2>
+    <p class="lead">Each state transition is atomic: conditions are met or the TBAR stays. Partial transitions do not exist. The ratchet enforces discipline that human willpower cannot.</p>
+    <div class="state-flow">
+      <div class="state-card"><div class="state-num">1</div><div class="state-name">Observed</div><div class="state-desc">Territory identified, BAIN ID assigned</div></div>
+      <div class="state-arrow">&rarr;</div>
+      <div class="state-card"><div class="state-num">2</div><div class="state-name">Measured</div><div class="state-desc">Physical measurement of all asset layers</div></div>
+      <div class="state-arrow">&rarr;</div>
+      <div class="state-card"><div class="state-num">3</div><div class="state-name">Verified</div><div class="state-desc">3+ independent verifiers converge</div></div>
+      <div class="state-arrow">&rarr;</div>
+      <div class="state-card"><div class="state-num">4</div><div class="state-name">Registered</div><div class="state-desc">Legal vehicle operational, TBAR complete</div></div>
+      <div class="state-arrow">&rarr;</div>
+      <div class="state-card"><div class="state-num">5</div><div class="state-name">Final</div><div class="state-desc">Capital entry conditions met</div></div>
+      <div class="state-arrow" style="color: rgba(139,74,74,0.3);">&darr;</div>
+      <div class="state-card reversed"><div class="state-num">R</div><div class="state-name">Reversed</div><div class="state-desc">Integrity failure or force majeure</div></div>
+    </div>
+    <div class="state-note"><p>State transitions are irreversible forward. A TBAR at State 3 cannot return to State 2 without passing through State R first. This is the architectural enforcement of the anti-impatience principle.</p></div>
+  </div>
+</section>
+
+<!-- GOVERNANCE -->
+
+<section class="governance">
+  <div class="gov-inner">
+    <div class="section-label">Governance</div>
+    <h2>Independent. Neutral. Not multilateral.</h2>
+    <p class="lead">The SWIFT precedent: a private-sector infrastructure entity that governments interact with but do not control.</p>
+    <div class="gov-grid">
+      <div class="gov-card">
+        <h3>Registry Operator</h3>
+        <p>KRYONIS Registry Services &mdash; structurally separated from advisory. Accepts registrations, records transitions, initiates reversals. Does not measure, verify, invest, or advise.</p>
+      </div>
+      <div class="gov-card">
+        <h3>Tri-Jurisdiction Hosting</h3>
+        <p>Primary: Hong Kong. Mirrors: UAE, Singapore. No single government can compel data modification. Each is accessible to BRICS+ and Western capital.</p>
+      </div>
+      <div class="gov-card">
+        <h3>Advisory Council</h3>
+        <p>Verifiers, sovereign entities, scientists, institutional investors. The Council advises. It does not govern. No veto power over operations. Input without capture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPLOYMENT -->
+
+<section class="deploy">
+  <div class="deploy-inner">
+    <div class="section-label">Deployment</div>
+    <h2>Three phases. First TBAR in 2026.</h2>
+    <div class="phase-list">
+      <div class="phase">
+        <div class="phase-header">
+          <span class="phase-num">PHASE 1</span>
+          <span class="phase-title">Single Territory</span>
+          <span class="phase-time">Q2&ndash;Q4 2026</span>
+        </div>
+        <p>First TBAR registered (boreal pilot, Russian North). Full data architecture tested with real MRV data. State progression through Verified. API tested with institutional users.</p>
+      </div>
+      <div class="phase">
+        <div class="phase-header">
+          <span class="phase-num">PHASE 2</span>
+          <span class="phase-title">Multi-Territory</span>
+          <span class="phase-time">2027</span>
+        </div>
+        <p>Additional territories registered. Boundary adjacency validation, parallel state progressions, multi-currency fee processing. Mirror infrastructure activated in UAE and Singapore.</p>
+      </div>
+      <div class="phase">
+        <div class="phase-header">
+          <span class="phase-num">PHASE 3</span>
+          <span class="phase-title">International</span>
+          <span class="phase-time">2028+</span>
+        </div>
+        <p>Non-Russian territories enter. Central Asian steppe, Southeast Asian peatlands, BRICS+ pilots. SIL integration with CIPS, SPFS, SWIFT-compatible messaging.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+
+<section class="cta" id="contact">
+  <h2>A trillion dollars in stranded bio-assets needs an institutional address.</h2>
+  <p>This is that address.</p>
+  <a id="mainCta" class="btn-primary" style="cursor:pointer;">Request Registry Specification</a>
+  <div class="cta-email">or write directly: <a id="emailLink" style="cursor:pointer;"></a></div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="footer-left"><strong>BCCS Global Registry</strong> &middot; Operated by KRYONIS Sovereign Systems Limited</div>
+  <div class="footer-right">Hong Kong SAR &middot; &copy; 2026</div>
+</footer>
+
+<script>
+(function(){var u='hq',d='kryonis.global',s='BCCS Registry Specification Request';var e=u+'\x40'+d;var m='mai'+'lto:'+e+'?subject='+encodeURIComponent(s);document.getElementById('mainCta').addEventListener('click',function(){window.location.href=m;});var el=document.getElementById('emailLink');el.textContent=e;el.addEventListener('click',function(){window.location.href=m;});})();
+</script>
+
+</body>
+</html>
