@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,20 +13,19 @@ body { font-family: 'DM Sans', sans-serif; background: #0A0C10; color: #E8E9EC; 
 
 /* ── HERO ── */
 .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 80px 60px; background: linear-gradient(170deg, #0A0C10 0%, #0F1A16 40%, #142820 100%); position: relative; overflow: hidden; }
-.hero::before { content: ‘’; position: absolute; top: 20%; right: 10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(27,77,62,0.15) 0%, transparent 70%); border-radius: 50%; }
+.hero::before { content: ''; position: absolute; top: 20%; right: 10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(27,77,62,0.15) 0%, transparent 70%); border-radius: 50%; }
 .hero-badge { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #2A7A5F; margin-bottom: 40px; position: relative; z-index: 2; }
-.hero h1 { font-family: ‘Cormorant Garamond’, serif; font-size: clamp(40px, 5.5vw, 72px); font-weight: 600; color: #F5F0E8; line-height: 1.1; max-width: 800px; position: relative; z-index: 2; }
+.hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5.5vw, 72px); font-weight: 600; color: #F5F0E8; line-height: 1.1; max-width: 800px; position: relative; z-index: 2; }
 .hero h1 em { font-style: italic; color: #2A7A5F; }
 .hero-sub { font-size: 18px; font-weight: 300; color: rgba(245,240,232,0.5); max-width: 580px; margin-top: 30px; position: relative; z-index: 2; }
 .hero-meta { margin-top: 60px; display: flex; gap: 40px; flex-wrap: wrap; position: relative; z-index: 2; }
-.hero-meta-item { }
-.hero-meta-item .hm-val { font-family: ‘JetBrains Mono’, monospace; font-size: 13px; font-weight: 500; color: #2A7A5F; letter-spacing: 1px; }
+.hero-meta-item .hm-val { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: #2A7A5F; letter-spacing: 1px; }
 .hero-meta-item .hm-key { font-size: 12px; color: rgba(245,240,232,0.3); margin-top: 4px; }
 
 /* ── SECTIONS ── */
 .section-label { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #2A7A5F; margin-bottom: 30px; }
 section { padding: 120px 60px; }
-section h2 { font-family: ‘Cormorant Garamond’, serif; font-size: clamp(28px, 3.5vw, 44px); font-weight: 600; color: #F5F0E8; line-height: 1.2; margin-bottom: 20px; max-width: 700px; }
+section h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3.5vw, 44px); font-weight: 600; color: #F5F0E8; line-height: 1.2; margin-bottom: 20px; max-width: 700px; }
 section .lead { font-size: 17px; font-weight: 300; color: rgba(245,240,232,0.5); max-width: 620px; margin-bottom: 60px; }
 
 /* ── WHAT IT IS ── */
@@ -37,17 +35,17 @@ section .lead { font-size: 17px; font-weight: 300; color: rgba(245,240,232,0.5);
 .what strong { color: #E8E9EC; font-weight: 600; }
 .not-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 50px; }
 .not-item { padding: 24px 28px; border: 1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.02); }
-.not-item .not-label { font-family: ‘JetBrains Mono’, monospace; font-size: 11px; font-weight: 500; color: #8B4A4A; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+.not-item .not-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500; color: #8B4A4A; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
 .not-item p { font-size: 14px; color: rgba(245,240,232,0.45); margin-bottom: 0; line-height: 1.6; }
 
 /* ── DATA ── */
 .data { background: #0F1A16; }
 .data-inner { max-width: 1000px; margin: 0 auto; }
 .tbar-box { border: 1px solid rgba(42,122,95,0.2); padding: 40px; background: rgba(42,122,95,0.04); margin-bottom: 40px; }
-.tbar-box h3 { font-family: ‘JetBrains Mono’, monospace; font-size: 14px; font-weight: 500; color: #2A7A5F; letter-spacing: 1px; margin-bottom: 20px; }
+.tbar-box h3 { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; color: #2A7A5F; letter-spacing: 1px; margin-bottom: 20px; }
 .tbar-field { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
 .tbar-field:last-child { border-bottom: none; }
-.tbar-field .tf-name { font-family: ‘JetBrains Mono’, monospace; font-size: 13px; color: #2A7A5F; }
+.tbar-field .tf-name { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2A7A5F; }
 .tbar-field .tf-desc { font-size: 13px; color: rgba(245,240,232,0.4); text-align: right; max-width: 60%; }
 
 /* ── STATES ── */
@@ -56,20 +54,20 @@ section .lead { font-size: 17px; font-weight: 300; color: rgba(245,240,232,0.5);
 .state-flow { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 40px; }
 .state-card { flex: 1; min-width: 140px; padding: 28px 20px; border: 1px solid rgba(42,122,95,0.15); background: rgba(42,122,95,0.03); text-align: center; position: relative; }
 .state-card.reversed { border-color: rgba(139,74,74,0.3); background: rgba(139,74,74,0.04); }
-.state-num { font-family: ‘JetBrains Mono’, monospace; font-size: 28px; font-weight: 500; color: #2A7A5F; }
+.state-num { font-family: 'JetBrains Mono', monospace; font-size: 28px; font-weight: 500; color: #2A7A5F; }
 .state-card.reversed .state-num { color: #8B4A4A; }
 .state-name { font-size: 13px; font-weight: 600; color: #E8E9EC; margin-top: 8px; letter-spacing: 0.5px; }
 .state-desc { font-size: 11px; color: rgba(245,240,232,0.35); margin-top: 6px; line-height: 1.5; }
 .state-arrow { display: flex; align-items: center; color: rgba(42,122,95,0.3); font-size: 20px; }
 .state-note { margin-top: 30px; padding: 20px; border-left: 2px solid #8B6914; background: rgba(139,105,20,0.06); }
-.state-note p { font-family: ‘Cormorant Garamond’, serif; font-size: 17px; font-style: italic; color: #8B6914; margin: 0; }
+.state-note p { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; color: #8B6914; margin: 0; }
 
 /* ── GOVERNANCE ── */
 .governance { background: #0F1A16; }
 .gov-inner { max-width: 900px; margin: 0 auto; }
 .gov-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
 .gov-card { padding: 30px; border: 1px solid rgba(255,255,255,0.06); }
-.gov-card h3 { font-family: ‘Cormorant Garamond’, serif; font-size: 20px; font-weight: 600; color: #F5F0E8; margin-bottom: 12px; }
+.gov-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: #F5F0E8; margin-bottom: 12px; }
 .gov-card p { font-size: 14px; color: rgba(245,240,232,0.45); line-height: 1.7; }
 
 /* ── DEPLOYMENT ── */
@@ -79,14 +77,52 @@ section .lead { font-size: 17px; font-weight: 300; color: rgba(245,240,232,0.5);
 .phase { padding: 30px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
 .phase:last-child { border-bottom: none; }
 .phase-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 10px; }
-.phase-num { font-family: ‘JetBrains Mono’, monospace; font-size: 12px; font-weight: 500; color: #2A7A5F; letter-spacing: 1px; }
-.phase-title { font-family: ‘Cormorant Garamond’, serif; font-size: 22px; font-weight: 600; color: #F5F0E8; }
+.phase-num { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; color: #2A7A5F; letter-spacing: 1px; }
+.phase-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: #F5F0E8; }
 .phase-time { font-size: 12px; color: rgba(245,240,232,0.3); margin-left: auto; }
 .phase p { font-size: 15px; color: rgba(245,240,232,0.45); font-weight: 300; line-height: 1.7; }
 
+/* ── BAIN ID EXPLORER ── */
+.explorer { background: linear-gradient(170deg, #0A0C10 0%, #0F1A16 50%, #142820 100%); border-top: 1px solid rgba(42,122,95,0.15); }
+.explorer-inner { max-width: 1100px; margin: 0 auto; }
+.explorer-stats { display: flex; gap: 40px; margin-bottom: 50px; flex-wrap: wrap; }
+.explorer-stat { }
+.explorer-stat .es-num { font-family: 'JetBrains Mono', monospace; font-size: 32px; font-weight: 500; color: #2A7A5F; }
+.explorer-stat .es-label { font-size: 12px; color: rgba(245,240,232,0.3); margin-top: 4px; }
+
+.search-bar { position: relative; margin-bottom: 20px; }
+.search-bar input { width: 100%; padding: 18px 24px 18px 50px; background: rgba(42,122,95,0.08); border: 1px solid rgba(42,122,95,0.2); color: #F5F0E8; font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 300; outline: none; transition: all 0.3s; }
+.search-bar input::placeholder { color: rgba(245,240,232,0.25); }
+.search-bar input:focus { border-color: #2A7A5F; background: rgba(42,122,95,0.12); }
+.search-icon { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: #2A7A5F; font-size: 18px; pointer-events: none; }
+
+.region-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 30px; }
+.region-tab { padding: 8px 16px; font-size: 12px; font-weight: 500; letter-spacing: 0.5px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); color: rgba(245,240,232,0.4); cursor: pointer; transition: all 0.3s; text-transform: uppercase; }
+.region-tab:hover { border-color: rgba(42,122,95,0.3); color: rgba(245,240,232,0.6); }
+.region-tab.active { background: rgba(42,122,95,0.15); border-color: #2A7A5F; color: #2A7A5F; }
+
+.country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; max-height: 720px; overflow-y: auto; padding-right: 8px; }
+.country-grid::-webkit-scrollbar { width: 4px; }
+.country-grid::-webkit-scrollbar-track { background: rgba(255,255,255,0.02); }
+.country-grid::-webkit-scrollbar-thumb { background: rgba(42,122,95,0.3); }
+
+.country-card { padding: 20px 24px; border: 1px solid rgba(255,255,255,0.04); background: rgba(255,255,255,0.015); display: flex; align-items: center; gap: 16px; transition: all 0.3s; cursor: pointer; }
+.country-card:hover { border-color: rgba(42,122,95,0.3); background: rgba(42,122,95,0.06); transform: translateX(4px); }
+.country-card .cc-bain { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; color: #2A7A5F; letter-spacing: 0.5px; white-space: nowrap; min-width: 155px; }
+.country-card .cc-info { flex: 1; min-width: 0; }
+.country-card .cc-name { font-size: 14px; font-weight: 500; color: #E8E9EC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.country-card .cc-region { font-size: 11px; color: rgba(245,240,232,0.3); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.country-card .cc-action { font-size: 11px; color: #2A7A5F; opacity: 0; transition: opacity 0.3s; white-space: nowrap; letter-spacing: 0.5px; font-weight: 600; text-transform: uppercase; }
+.country-card:hover .cc-action { opacity: 1; }
+
+.no-results { padding: 60px; text-align: center; color: rgba(245,240,232,0.25); font-size: 15px; display: none; }
+
+.explorer-footer { margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.04); }
+.explorer-footer p { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-style: italic; color: #8B6914; max-width: 700px; }
+
 /* ── CTA ── */
 .cta { padding: 120px 60px; background: linear-gradient(170deg, #142820 0%, #1B4D3E 100%); text-align: center; }
-.cta h2 { font-family: ‘Cormorant Garamond’, serif; font-size: clamp(28px, 4vw, 48px); font-weight: 600; color: #F5F0E8; margin-bottom: 20px; max-width: none; }
+.cta h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 48px); font-weight: 600; color: #F5F0E8; margin-bottom: 20px; max-width: none; }
 .cta p { font-size: 17px; color: rgba(245,240,232,0.5); margin-bottom: 40px; font-weight: 300; }
 .btn-primary { display: inline-block; padding: 16px 36px; background: #2A7A5F; color: #F5F0E8; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; transition: all 0.3s ease; cursor: pointer; }
 .btn-primary:hover { background: #1B4D3E; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(42,122,95,0.3); }
@@ -109,14 +145,17 @@ footer { padding: 30px 24px; }
 .tbar-field { flex-direction: column; gap: 4px; }
 .tbar-field .tf-desc { text-align: left; max-width: 100%; }
 .hero-meta { gap: 24px; }
+.country-grid { grid-template-columns: 1fr; max-height: 500px; }
+.country-card .cc-action { opacity: 1; }
+.explorer-stats { gap: 24px; }
+.region-tabs { gap: 6px; }
+.region-tab { padding: 6px 12px; font-size: 11px; }
 }
 </style>
-
 </head>
 <body>
 
 <!-- HERO -->
-
 <section class="hero">
   <div class="hero-badge">BCCS Global Registry &middot; Operated by KRYONIS Sovereign Systems</div>
   <h1>The institutional address for <em>territorial bio-capital</em></h1>
@@ -130,7 +169,6 @@ footer { padding: 30px 24px; }
 </section>
 
 <!-- WHAT IT IS -->
-
 <section class="what">
   <div class="what-inner">
     <div class="section-label">What This Is</div>
@@ -148,7 +186,6 @@ footer { padding: 30px 24px; }
 </section>
 
 <!-- DATA ARCHITECTURE -->
-
 <section class="data">
   <div class="data-inner">
     <div class="section-label">Data Architecture</div>
@@ -176,7 +213,6 @@ footer { padding: 30px 24px; }
 </section>
 
 <!-- CLEARING STATES -->
-
 <section class="states">
   <div class="states-inner">
     <div class="section-label">Clearing-State Pathway</div>
@@ -200,66 +236,71 @@ footer { padding: 30px 24px; }
 </section>
 
 <!-- GOVERNANCE -->
-
 <section class="governance">
   <div class="gov-inner">
     <div class="section-label">Governance</div>
     <h2>Independent. Neutral. Not multilateral.</h2>
     <p class="lead">The SWIFT precedent: a private-sector infrastructure entity that governments interact with but do not control.</p>
     <div class="gov-grid">
-      <div class="gov-card">
-        <h3>Registry Operator</h3>
-        <p>KRYONIS Registry Services &mdash; structurally separated from advisory. Accepts registrations, records transitions, initiates reversals. Does not measure, verify, invest, or advise.</p>
-      </div>
-      <div class="gov-card">
-        <h3>Tri-Jurisdiction Hosting</h3>
-        <p>Primary: Hong Kong. Mirrors: UAE, Singapore. No single government can compel data modification. Each is accessible to BRICS+ and Western capital.</p>
-      </div>
-      <div class="gov-card">
-        <h3>Advisory Council</h3>
-        <p>Verifiers, sovereign entities, scientists, institutional investors. The Council advises. It does not govern. No veto power over operations. Input without capture.</p>
-      </div>
+      <div class="gov-card"><h3>Registry Operator</h3><p>KRYONIS Registry Services &mdash; structurally separated from advisory. Accepts registrations, records transitions, initiates reversals. Does not measure, verify, invest, or advise.</p></div>
+      <div class="gov-card"><h3>Tri-Jurisdiction Hosting</h3><p>Primary: Hong Kong. Mirrors: UAE, Singapore. No single government can compel data modification. Each is accessible to BRICS+ and Western capital.</p></div>
+      <div class="gov-card"><h3>Advisory Council</h3><p>Verifiers, sovereign entities, scientists, institutional investors. The Council advises. It does not govern. No veto power over operations. Input without capture.</p></div>
     </div>
   </div>
 </section>
 
 <!-- DEPLOYMENT -->
-
 <section class="deploy">
   <div class="deploy-inner">
     <div class="section-label">Deployment</div>
     <h2>Three phases. First TBAR in 2026.</h2>
     <div class="phase-list">
-      <div class="phase">
-        <div class="phase-header">
-          <span class="phase-num">PHASE 1</span>
-          <span class="phase-title">Single Territory</span>
-          <span class="phase-time">Q2&ndash;Q4 2026</span>
-        </div>
-        <p>First TBAR registered (boreal pilot, Russian North). Full data architecture tested with real MRV data. State progression through Verified. API tested with institutional users.</p>
-      </div>
-      <div class="phase">
-        <div class="phase-header">
-          <span class="phase-num">PHASE 2</span>
-          <span class="phase-title">Multi-Territory</span>
-          <span class="phase-time">2027</span>
-        </div>
-        <p>Additional territories registered. Boundary adjacency validation, parallel state progressions, multi-currency fee processing. Mirror infrastructure activated in UAE and Singapore.</p>
-      </div>
-      <div class="phase">
-        <div class="phase-header">
-          <span class="phase-num">PHASE 3</span>
-          <span class="phase-title">International</span>
-          <span class="phase-time">2028+</span>
-        </div>
-        <p>Non-Russian territories enter. Central Asian steppe, Southeast Asian peatlands, BRICS+ pilots. SIL integration with CIPS, SPFS, SWIFT-compatible messaging.</p>
-      </div>
+      <div class="phase"><div class="phase-header"><span class="phase-num">PHASE 1</span><span class="phase-title">Single Territory</span><span class="phase-time">Q2&ndash;Q4 2026</span></div><p>First TBAR registered (boreal pilot, Russian North). Full data architecture tested with real MRV data. State progression through Verified. API tested with institutional users.</p></div>
+      <div class="phase"><div class="phase-header"><span class="phase-num">PHASE 2</span><span class="phase-title">Multi-Territory</span><span class="phase-time">2027</span></div><p>Additional territories registered. Boundary adjacency validation, parallel state progressions, multi-currency fee processing. Mirror infrastructure activated in UAE and Singapore.</p></div>
+      <div class="phase"><div class="phase-header"><span class="phase-num">PHASE 3</span><span class="phase-title">International</span><span class="phase-time">2028+</span></div><p>Non-Russian territories enter. Central Asian steppe, Southeast Asian peatlands, BRICS+ pilots. SIL integration with CIPS, SPFS, SWIFT-compatible messaging.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BAIN ID EXPLORER -->
+<section class="explorer" id="explorer">
+  <div class="explorer-inner">
+    <div class="section-label">Global Registry Explorer</div>
+    <h2>Find your territory. <em>Your BAIN ID is ready.</em></h2>
+    <p class="lead">175 sovereign territories. One standard. Every latitude, every jurisdiction, every biome. The protocol is jurisdictionally neutral &mdash; your state operates its own sovereign node.</p>
+
+    <div class="explorer-stats">
+      <div class="explorer-stat"><div class="es-num">175</div><div class="es-label">Sovereign territories</div></div>
+      <div class="explorer-stat"><div class="es-num">8</div><div class="es-label">Continental regions</div></div>
+      <div class="explorer-stat"><div class="es-num">1</div><div class="es-label">Universal standard</div></div>
+    </div>
+
+    <div class="search-bar">
+      <span class="search-icon">&#9906;</span>
+      <input type="text" id="searchInput" placeholder="Search by country, region, territory, or BAIN ID...">
+    </div>
+
+    <div class="region-tabs" id="regionTabs">
+      <div class="region-tab active" data-region="all">All</div>
+      <div class="region-tab" data-region="brics">BRICS+</div>
+      <div class="region-tab" data-region="eaeu">EAEU</div>
+      <div class="region-tab" data-region="europe">Europe</div>
+      <div class="region-tab" data-region="asia">Asia &amp; Middle East</div>
+      <div class="region-tab" data-region="africa">Africa</div>
+      <div class="region-tab" data-region="namerica">Americas</div>
+      <div class="region-tab" data-region="oceania">Oceania</div>
+    </div>
+
+    <div class="country-grid" id="countryGrid"></div>
+    <div class="no-results" id="noResults">No territories found. Try a different search.</div>
+
+    <div class="explorer-footer">
+      <p>The standard is jurisdictionally neutral. Each state operates its own sovereign node. No state depends on another state&rsquo;s infrastructure. The protocol connects them.</p>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-
 <section class="cta" id="contact">
   <h2>A trillion dollars in stranded bio-assets needs an institutional address.</h2>
   <p>This is that address.</p>
@@ -268,14 +309,247 @@ footer { padding: 30px 24px; }
 </section>
 
 <!-- FOOTER -->
-
 <footer>
   <div class="footer-left"><strong>BCCS Global Registry</strong> &middot; Operated by KRYONIS Sovereign Systems Limited</div>
   <div class="footer-right">Hong Kong SAR &middot; &copy; 2026</div>
 </footer>
 
 <script>
+// Email obfuscation
 (function(){var u='hq',d='kryonis.global',s='BCCS Registry Specification Request';var e=u+'\x40'+d;var m='mai'+'lto:'+e+'?subject='+encodeURIComponent(s);document.getElementById('mainCta').addEventListener('click',function(){window.location.href=m;});var el=document.getElementById('emailLink');el.textContent=e;el.addEventListener('click',function(){window.location.href=m;});})();
+
+// BAIN ID check digit
+function chk(code){var s=0;code.replace(/-/g,'').split('').forEach(function(c){s+=c.charCodeAt(0)});return s%10;}
+
+// Country data: [cc, reg, ter, name, regName, terName, group]
+var C=[
+["RU","KAR","PEG","Russia","Karelia","Pegozer","brics"],
+["CN","YUN","KNM","China","Yunnan","Kunming Basin","brics"],
+["IN","KER","WAY","India","Kerala","Wayanad","brics"],
+["BR","AMA","MAN","Brazil","Amazonas","Manaus Basin","brics"],
+["ZA","KZN","HLU","South Africa","KwaZulu-Natal","Hluhluwe","brics"],
+["EG","ASW","NAS","Egypt","Aswan","Nasser Basin","brics"],
+["ET","ORM","BAL","Ethiopia","Oromia","Bale Mountains","brics"],
+["IR","MAZ","HYR","Iran","Mazandaran","Hyrcanian","brics"],
+["SA","ASR","ASR","Saudi Arabia","Asir","Asir Mountains","brics"],
+["AE","ADB","MNG","UAE","Abu Dhabi","Mangroves","brics"],
+["KZ","ALM","ILE","Kazakhstan","Almaty","Ile-Alatau","eaeu"],
+["BY","BRS","BEL","Belarus","Brest","Belovezhskaya","eaeu"],
+["AM","SYU","KHO","Armenia","Syunik","Khor Virap","eaeu"],
+["KG","ISK","ALA","Kyrgyzstan","Issyk-Kul","Ala-Archa","eaeu"],
+["DE","BAY","BER","Germany","Bavaria","Berchtesgaden","europe"],
+["FR","AQU","LAN","France","Aquitaine","Landes Forest","europe"],
+["GB","SCT","CAI","United Kingdom","Scotland","Cairngorms","europe"],
+["IT","TOS","MAR","Italy","Toscana","Maremma","europe"],
+["ES","AND","DON","Spain","Andalusia","Donana","europe"],
+["PT","ALG","RIA","Portugal","Algarve","Ria Formosa","europe"],
+["NL","FRL","WAD","Netherlands","Friesland","Wadden","europe"],
+["BE","WAL","ARD","Belgium","Wallonia","Ardennes","europe"],
+["AT","TIR","OET","Austria","Tirol","Oetztal","europe"],
+["CH","GRA","ENG","Switzerland","Graubuenden","Engadin","europe"],
+["SE","NOR","ABK","Sweden","Norrbotten","Abisko","europe"],
+["NO","NOR","LOF","Norway","Nordland","Lofoten","europe"],
+["FI","LAP","INR","Finland","Lappi","Inari","europe"],
+["DK","SJL","THY","Denmark","Sjaelland","Thy","europe"],
+["IS","NOR","VTN","Iceland","Nordurland","Vatnajoekull","europe"],
+["IE","CON","BUR","Ireland","Connacht","Burren","europe"],
+["PL","PDL","BIA","Poland","Podlasie","Bialowieza","europe"],
+["CZ","JHM","MOR","Czech Republic","South Moravia","Moravsky Kras","europe"],
+["SK","PRE","TAT","Slovakia","Presov","High Tatras","europe"],
+["HU","HBM","HOR","Hungary","Hajdu-Bihar","Hortobagy","europe"],
+["RO","BRA","FAG","Romania","Brasov","Fagaras","europe"],
+["BG","BLG","PIR","Bulgaria","Blagoevgrad","Pirin","europe"],
+["GR","EPR","PIN","Greece","Epirus","Pindus","europe"],
+["HR","PRI","PLI","Croatia","Primorje","Plitvice","europe"],
+["SI","GOR","TRI","Slovenia","Goriska","Triglav","europe"],
+["RS","VOJ","FRU","Serbia","Vojvodina","Fruska Gora","europe"],
+["BA","SRP","SUT","Bosnia","Srpska","Sutjeska","europe"],
+["ME","PRI","DUR","Montenegro","Primorska","Durmitor","europe"],
+["MK","JUG","GAL","North Macedonia","Jugozapaden","Galicica","europe"],
+["AL","VLO","BUT","Albania","Vlore","Butrint","europe"],
+["EE","IDA","LAH","Estonia","Ida-Virumaa","Lahemaa","europe"],
+["LV","KUR","KEM","Latvia","Kurzeme","Kemeri","europe"],
+["LT","DZK","CUK","Lithuania","Dzukija","Cepkeliai","europe"],
+["UA","ZAK","UZH","Ukraine","Zakarpattia","Uzhansky","europe"],
+["MD","OHR","COD","Moldova","Orhei","Codri","europe"],
+["LU","MUL","MUL","Luxembourg","Muellerthal","Muellerthal","europe"],
+["MT","MLT","GHD","Malta","Malta","Ghadira","europe"],
+["CY","TRO","AKA","Cyprus","Troodos","Akamas","europe"],
+["JP","HOK","SHI","Japan","Hokkaido","Shiretoko","asia"],
+["KR","GAN","SOK","South Korea","Gangwon","Seorak","asia"],
+["ID","KAL","KUT","Indonesia","Kalimantan","Kutai","asia"],
+["MY","SAB","KIN","Malaysia","Sabah","Kinabalu","asia"],
+["TH","KAN","ERW","Thailand","Kanchanaburi","Erawan","asia"],
+["VN","TTH","PHO","Vietnam","Thua Thien","Phong Nha","asia"],
+["PH","PAL","PUR","Philippines","Palawan","Puerto Princesa","asia"],
+["MM","KCH","HKK","Myanmar","Kachin","Hkakabo","asia"],
+["KH","KKG","CAR","Cambodia","Koh Kong","Cardamom","asia"],
+["LA","LNG","NKA","Laos","Luang Namtha","Nam Ka","asia"],
+["SG","SNG","SBR","Singapore","Singapore","Sungei Buloh","asia"],
+["BN","TEM","ULU","Brunei","Temburong","Ulu Temburong","asia"],
+["TL","LAU","NIN","Timor-Leste","Lautem","Nino Konis","asia"],
+["PK","KPK","KAL","Pakistan","Khyber Pakhtunkhwa","Kalash Valley","asia"],
+["BD","SYL","SUN","Bangladesh","Sylhet","Sundarbans","asia"],
+["LK","SAB","SIN","Sri Lanka","Sabaragamuwa","Sinharaja","asia"],
+["NP","BAG","CHI","Nepal","Bagmati","Chitwan","asia"],
+["BT","BUM","JIG","Bhutan","Bumthang","Jigme Dorji","asia"],
+["MN","KHE","KHU","Mongolia","Khentii","Khustain","asia"],
+["AF","BAM","BAN","Afghanistan","Bamyan","Band-e-Amir","asia"],
+["UZ","BUK","NUR","Uzbekistan","Bukhara","Nurata","asia"],
+["TJ","GBD","PAM","Tajikistan","Gorno-Badakhshan","Pamir","asia"],
+["TM","MRY","REP","Turkmenistan","Mary","Repetek","asia"],
+["GE","IME","TUS","Georgia","Imereti","Tusheti","asia"],
+["AZ","SMX","HIR","Azerbaijan","Shamakhi","Hirkan","asia"],
+["IQ","KRD","HAW","Iraq","Kurdistan","Hawraman","asia"],
+["JO","AQB","DAN","Jordan","Aqaba","Dana","asia"],
+["LB","MNT","HOR","Lebanon","Mount Lebanon","Horsh Ehden","asia"],
+["IL","JUD","EGD","Israel","Judean","Ein Gedi","asia"],
+["PS","WBK","WAD","Palestine","West Bank","Wadi Qelt","asia"],
+["SY","LAT","FRO","Syria","Latakia","Fronloq","asia"],
+["YE","SOC","SOC","Yemen","Socotra","Socotra","asia"],
+["OM","DHO","SAL","Oman","Dhofar","Salalah","asia"],
+["QA","DOH","KHR","Qatar","Doha","Khor Al Adaid","asia"],
+["BH","NOR","TUB","Bahrain","Northern","Tubli Bay","asia"],
+["KW","JAH","BUB","Kuwait","Jahra","Bubiyan","asia"],
+["NG","CRS","CRO","Nigeria","Cross River","Cross River NP","africa"],
+["KE","RVA","TSV","Kenya","Rift Valley","Tsavo","africa"],
+["TZ","ARU","SER","Tanzania","Arusha","Serengeti","africa"],
+["UG","WES","BWI","Uganda","Western","Bwindi","africa"],
+["RW","WES","NYU","Rwanda","Western","Nyungwe","africa"],
+["CD","SKV","VIR","DR Congo","South Kivu","Virunga","africa"],
+["CG","LIK","ODA","Congo","Likouala","Odzala","africa"],
+["CM","SOU","LOB","Cameroon","South","Lobeke","africa"],
+["GA","OGO","LOP","Gabon","Ogooue-Ivindo","Lope","africa"],
+["GH","ASH","KAK","Ghana","Ashanti","Kakum","africa"],
+["CI","SAS","TAI","Cote d'Ivoire","Sassandra","Tai","africa"],
+["SN","ZIG","NIO","Senegal","Ziguinchor","Niokolo-Koba","africa"],
+["ML","SIK","BAF","Mali","Sikasso","Bafing","africa"],
+["BF","SOU","NAZ","Burkina Faso","Sud-Ouest","Nazinga","africa"],
+["NE","AGD","WNP","Niger","Agadez","W National Park","africa"],
+["TD","LOG","ZAK","Chad","Logone","Zakouma","africa"],
+["SD","DRF","DIK","Sudan","Darfur","Dinder","africa"],
+["SS","CEQ","BOM","South Sudan","Central Equatoria","Boma","africa"],
+["ER","DEB","SEM","Eritrea","Debub","Semenawi","africa"],
+["DJ","ALI","DAY","Djibouti","Ali Sabieh","Day Forest","africa"],
+["SO","JUB","LAG","Somalia","Jubbaland","Lag Badana","africa"],
+["MW","SOU","MUL","Malawi","Southern","Mulanje","africa"],
+["ZM","NOR","KAS","Zambia","Northern","Kasanka","africa"],
+["ZW","MAT","HWA","Zimbabwe","Matabeleland","Hwange","africa"],
+["BW","NOR","OKA","Botswana","North-West","Okavango","africa"],
+["NA","KUN","EPT","Namibia","Kunene","Etosha Pan","africa"],
+["MZ","SOF","GOR","Mozambique","Sofala","Gorongosa","africa"],
+["MG","ANA","TSI","Madagascar","Analamanga","Tsingy","africa"],
+["AO","CUA","KIS","Angola","Cuando Cubango","Kissama","africa"],
+["SZ","HHO","MLI","Eswatini","Hhohho","Mlilwane","africa"],
+["LS","MAS","TSE","Lesotho","Maseru","Tsehlanyane","africa"],
+["SC","MAH","VAL","Seychelles","Mahe","Vallee de Mai","africa"],
+["MU","BRP","BRM","Mauritius","Black River","Black River Gorges","africa"],
+["CV","SAN","FOG","Cape Verde","Santo Antao","Fogo","africa"],
+["ST","PRI","OBO","Sao Tome","Principe","Obo","africa"],
+["GQ","BIS","MON","Equatorial Guinea","Bioko Sur","Monte Alen","africa"],
+["GM","WES","KIA","Gambia","Western","Kiang West","africa"],
+["GW","BIO","ORG","Guinea-Bissau","Biombo","Orango","africa"],
+["GN","NZR","NIM","Guinea","Nzerekore","Nimba","africa"],
+["SL","EAS","GOL","Sierra Leone","Eastern","Gola","africa"],
+["LR","SIN","SAP","Liberia","Sinoe","Sapo","africa"],
+["TG","KAR","FAZ","Togo","Kara","Fazao-Malfakassa","africa"],
+["BJ","ATA","PEN","Benin","Atacora","Pendjari","africa"],
+["BI","KIB","KIB","Burundi","Kibira","Kibira NP","africa"],
+["US","ALA","TON","United States","Alaska","Tongass","namerica"],
+["CA","BRC","GBR","Canada","British Columbia","Great Bear","namerica"],
+["MX","OAX","LAC","Mexico","Oaxaca","Lacandon","namerica"],
+["GT","PET","TIK","Guatemala","Peten","Tikal","namerica"],
+["BZ","CAY","MON","Belize","Cayo","Mountain Pine","namerica"],
+["HN","GRD","RIO","Honduras","Gracias a Dios","Rio Platano","namerica"],
+["SV","AHU","IMP","El Salvador","Ahuachapan","El Imposible","namerica"],
+["NI","RAS","BOS","Nicaragua","RAAN","Bosawas","namerica"],
+["CR","LIM","COR","Costa Rica","Limon","Corcovado","namerica"],
+["PA","DAR","DAR","Panama","Darien","Darien","namerica"],
+["CU","PIN","VIN","Cuba","Pinar del Rio","Vinales","namerica"],
+["JM","SUR","BLM","Jamaica","Surrey","Blue Mountains","namerica"],
+["HT","SUD","MAC","Haiti","Sud","Macaya","namerica"],
+["DO","PED","JAR","Dominican Republic","Pedernales","Jaragua","namerica"],
+["TT","NAR","NAR","Trinidad and Tobago","Nariva","Nariva Swamp","namerica"],
+["BB","STJ","GRA","Barbados","St. Joseph","Graeme Hall","namerica"],
+["BS","AND","EXU","Bahamas","Andros","Exuma Cays","namerica"],
+["CO","CHO","UTR","Colombia","Choco","Utria","namerica"],
+["VE","BOL","CAN","Venezuela","Bolivar","Canaima","namerica"],
+["PE","MAD","MAN","Peru","Madre de Dios","Manu","namerica"],
+["EC","NAP","YAS","Ecuador","Napo","Yasuni","namerica"],
+["BO","BEN","MAD","Bolivia","Beni","Madidi","namerica"],
+["PY","CHA","DEF","Paraguay","Chaco","Defensores","namerica"],
+["CL","AYS","TDP","Chile","Aysen","Torres del Paine","namerica"],
+["AR","MIS","IGU","Argentina","Misiones","Iguazu","namerica"],
+["UY","ROC","QBR","Uruguay","Rocha","Quebrada de los Cuervos","namerica"],
+["GY","POT","IWO","Guyana","Potaro-Siparuni","Iwokrama","namerica"],
+["SR","SIP","CEN","Suriname","Sipaliwini","Central Suriname","namerica"],
+["GF","CAY","AMA","French Guiana","Cayenne","Amazonian Park","namerica"],
+["AU","QLD","DAI","Australia","Queensland","Daintree","oceania"],
+["NZ","WTC","FIO","New Zealand","West Coast","Fiordland","oceania"],
+["PG","WES","SEP","Papua New Guinea","Western","Sepik","oceania"],
+["FJ","WES","SIG","Fiji","Western","Sigatoka","oceania"],
+["SB","WES","MAR","Solomon Islands","Western","Marovo","oceania"],
+["VU","SHF","ERA","Vanuatu","Shefa","Erromango","oceania"],
+["WS","UPO","FAL","Samoa","Upolu","Falealupo","oceania"],
+["TO","VAV","EUA","Tonga","Vavau","Eua","oceania"],
+["FM","PON","NAN","Micronesia","Pohnpei","Nan Madol","oceania"],
+["PW","KOR","RCR","Palau","Koror","Rock Islands","oceania"],
+["MH","RAL","BIK","Marshall Islands","Ralik","Bikini Atoll","oceania"],
+["KI","GIL","PHX","Kiribati","Gilbert","Phoenix Islands","oceania"],
+["NR","AIW","ANB","Nauru","Aiwo","Anabar","oceania"],
+["TV","FUN","FUN","Tuvalu","Funafuti","Funafuti","oceania"]
+];
+
+// Build entries
+var entries=C.map(function(c){
+  var raw=c[0]+'-'+c[1]+'-'+c[2]+'-001';
+  return{bain:c[0]+'-'+c[1]+'-'+c[2]+'-001-'+chk(raw),name:c[3],reg:c[4],ter:c[5],group:c[6],cc:c[0]};
+});
+
+var grid=document.getElementById('countryGrid');
+var noRes=document.getElementById('noResults');
+var searchInput=document.getElementById('searchInput');
+var activeRegion='all';
+
+function sendDeployment(name,bain){
+  var u='hq',d='kryonis.global';
+  var e=u+'\x40'+d;
+  var subj='Sovereign Deployment Inquiry: '+name+' ('+bain+')';
+  var body='We are writing to inquire about sovereign deployment of the BCCS protocol for '+name+'.\n\nBAIN ID: '+bain+'\n\nPlease provide the Registry Specification and Sovereign Deployment Package.\n\n---\nName:\nPosition:\nInstitution:\nCountry: '+name;
+  window.location.href='mai'+'lto:'+e+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+}
+
+function render(){
+  var q=searchInput.value.toLowerCase().trim();
+  var filtered=entries.filter(function(e){
+    if(activeRegion!=='all'&&e.group!==activeRegion)return false;
+    if(!q)return true;
+    return(e.name.toLowerCase().indexOf(q)!==-1||e.reg.toLowerCase().indexOf(q)!==-1||e.ter.toLowerCase().indexOf(q)!==-1||e.bain.toLowerCase().indexOf(q)!==-1||e.cc.toLowerCase()===q);
+  });
+  grid.innerHTML='';
+  if(filtered.length===0){noRes.style.display='block';return;}
+  noRes.style.display='none';
+  filtered.forEach(function(e){
+    var card=document.createElement('div');
+    card.className='country-card';
+    card.innerHTML='<div class="cc-bain">'+e.bain+'</div><div class="cc-info"><div class="cc-name">'+e.name+'</div><div class="cc-region">'+e.reg+' &middot; '+e.ter+'</div></div><div class="cc-action">Deploy &rarr;</div>';
+    card.addEventListener('click',function(){sendDeployment(e.name,e.bain);});
+    grid.appendChild(card);
+  });
+}
+
+// Region tabs
+document.querySelectorAll('.region-tab').forEach(function(tab){
+  tab.addEventListener('click',function(){
+    document.querySelectorAll('.region-tab').forEach(function(t){t.classList.remove('active');});
+    tab.classList.add('active');
+    activeRegion=tab.dataset.region;
+    render();
+  });
+});
+
+searchInput.addEventListener('input',render);
+render();
 </script>
 
 </body>
