@@ -72,6 +72,22 @@ section .lead { font-size: 17px; font-weight: 300; color: rgba(245,240,232,0.5);
 
 /* ── DEPLOYMENT ── */
 .deploy { background: #0A0C10; border-top: 1px solid rgba(255,255,255,0.04); }
+
+/* ── MEASUREMENT INFRASTRUCTURE ── */
+.measurement { background: #0A0C10; border-top: 1px solid rgba(255,255,255,0.04); }
+.meas-inner { max-width: 1000px; margin: 0 auto; }
+.meas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 50px; }
+.meas-card { padding: 32px; border: 1px solid rgba(42,122,95,0.12); background: rgba(42,122,95,0.03); position: relative; overflow: hidden; }
+.meas-card::before { content: attr(data-num); position: absolute; top: 16px; right: 20px; font-family: 'JetBrains Mono', monospace; font-size: 48px; font-weight: 500; color: rgba(42,122,95,0.08); line-height: 1; }
+.meas-card h3 { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; color: #2A7A5F; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px; }
+.meas-card p { font-size: 14px; color: rgba(245,240,232,0.5); line-height: 1.7; }
+.meas-card .meas-tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+.meas-card .meas-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 3px 8px; background: rgba(42,122,95,0.1); border: 1px solid rgba(42,122,95,0.15); color: #2A7A5F; letter-spacing: 0.5px; }
+.meas-note { margin-top: 40px; padding: 24px; border-left: 2px solid #8B6914; background: rgba(139,105,20,0.06); }
+.meas-note p { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; color: #8B6914; margin: 0; }
+@media (max-width: 768px) {
+.meas-grid { grid-template-columns: 1fr; }
+}
 .deploy-inner { max-width: 900px; margin: 0 auto; }
 .phase-list { margin-top: 40px; }
 .phase { padding: 30px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
@@ -165,6 +181,7 @@ footer { padding: 30px 24px; }
     <div class="hero-meta-item"><div class="hm-val">BAIN ID</div><div class="hm-key">Global identification standard</div></div>
     <div class="hero-meta-item"><div class="hm-val">HK &middot; UAE &middot; SG</div><div class="hm-key">Tri-jurisdiction hosting</div></div>
     <div class="hero-meta-item"><div class="hm-val">MPIV</div><div class="hm-key">Multi-perspective verification</div></div>
+    <div class="hero-meta-item"><div class="hm-val">SATELLITE + GROUND</div><div class="hm-key">Dual-layer monitoring</div></div>
   </div>
 </section>
 
@@ -245,6 +262,52 @@ footer { padding: 30px 24px; }
       <div class="gov-card"><h3>Registry Operator</h3><p>KRYONIS Registry Services &mdash; structurally separated from advisory. Accepts registrations, records transitions, initiates reversals. Does not measure, verify, invest, or advise.</p></div>
       <div class="gov-card"><h3>Tri-Jurisdiction Hosting</h3><p>Primary: Hong Kong. Mirrors: UAE, Singapore. No single government can compel data modification. Each is accessible to BRICS+ and Western capital.</p></div>
       <div class="gov-card"><h3>Advisory Council</h3><p>Verifiers, sovereign entities, scientists, institutional investors. The Council advises. It does not govern. No veto power over operations. Input without capture.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEASUREMENT INFRASTRUCTURE -->
+<section class="measurement">
+  <div class="meas-inner">
+    <div class="section-label">Measurement Infrastructure</div>
+    <h2>Satellite-grade precision. <em>Sovereign-grade trust.</em></h2>
+    <p class="lead">Every TBAR is grounded in physical measurement. The BCCS protocol integrates multi-source remote sensing, ground-truth validation, and continuous monitoring to ensure that every clearing-state transition is backed by verifiable data.</p>
+
+    <div class="meas-grid">
+      <div class="meas-card" data-num="01">
+        <h3>Satellite Remote Sensing</h3>
+        <p>Multi-spectral and radar satellite imagery at 10m resolution for continuous territorial monitoring. Biomass estimation, canopy density, water body mapping, land-use change detection &mdash; updated at intervals matching ecological cycles, not financial quarters.</p>
+        <div class="meas-tags"><span class="meas-tag">Sentinel-1/2</span><span class="meas-tag">Landsat-9</span><span class="meas-tag">SAR Radar</span><span class="meas-tag">10m Resolution</span></div>
+      </div>
+      <div class="meas-card" data-num="02">
+        <h3>LiDAR &amp; Aerial Survey</h3>
+        <p>High-resolution 3D terrain and canopy modelling for precise biomass volumetrics. Sub-meter accuracy for boundary delineation and forest structure analysis. Calibration layer between satellite data and ground truth.</p>
+        <div class="meas-tags"><span class="meas-tag">3D Point Cloud</span><span class="meas-tag">Canopy Height</span><span class="meas-tag">Sub-meter</span><span class="meas-tag">Biomass Volume</span></div>
+      </div>
+      <div class="meas-card" data-num="03">
+        <h3>IoT Sensor Networks</h3>
+        <p>Ground-level environmental telemetry: soil carbon flux, permafrost temperature gradients, hydrological flow rates, microclimate data. Real-time feeds integrated into TBAR asset layer calculations. Hardware-agnostic protocol.</p>
+        <div class="meas-tags"><span class="meas-tag">Soil Carbon</span><span class="meas-tag">Permafrost</span><span class="meas-tag">Hydrology</span><span class="meas-tag">Real-time</span></div>
+      </div>
+      <div class="meas-card" data-num="04">
+        <h3>AI-Driven Analytics</h3>
+        <p>Machine learning models trained on multi-source data fusion: satellite imagery, LiDAR, ground sensors, and historical records. Anomaly detection for early warning. Predictive modelling for regeneration trajectories and biodiversity indices.</p>
+        <div class="meas-tags"><span class="meas-tag">Data Fusion</span><span class="meas-tag">Anomaly Detection</span><span class="meas-tag">Predictive</span><span class="meas-tag">Multi-source</span></div>
+      </div>
+      <div class="meas-card" data-num="05">
+        <h3>Ground-Truth Verification</h3>
+        <p>No satellite replaces a verifier on the ground. Certified BCCS verifiers conduct field campaigns: species inventories, soil core sampling, water quality analysis. Ground truth calibrates remote data. Three or more independent verifiers must converge.</p>
+        <div class="meas-tags"><span class="meas-tag">Field Campaigns</span><span class="meas-tag">Soil Cores</span><span class="meas-tag">Species Census</span><span class="meas-tag">MPIV</span></div>
+      </div>
+      <div class="meas-card" data-num="06">
+        <h3>Continuous Monitoring</h3>
+        <p>Post-registration surveillance. A TBAR at State 5 is not a static record &mdash; it is a living dataset. Degradation triggers automatic review. Integrity failure initiates State R. The registry watches what it records.</p>
+        <div class="meas-tags"><span class="meas-tag">Post-Registration</span><span class="meas-tag">Degradation Alert</span><span class="meas-tag">State R Trigger</span><span class="meas-tag">Living Data</span></div>
+      </div>
+    </div>
+
+    <div class="meas-note">
+      <p>The measurement infrastructure does not belong to KRYONIS. It belongs to the sovereign operator. KRYONIS defines the standard &mdash; what must be measured, to what precision, by whom. The state deploys the sensors on its own territory, under its own jurisdiction. Sovereignty extends to the measurement layer.</p>
     </div>
   </div>
 </section>
